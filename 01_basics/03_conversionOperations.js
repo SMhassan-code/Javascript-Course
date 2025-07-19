@@ -66,4 +66,4 @@ let gameCounter = 100
 // gameCounter++; // Postfix
 // --gameCounter; // Prefix
 
-console.log(gameCounter)
+// console.log(gameCounter)
