@@ -23,5 +23,47 @@ let value = 25
 
 let stringValue = String(value)
 
-console.log(stringValue)
-console.log(typeof stringValue)
+// console.log(stringValue)
+// console.log(typeof stringValue)
+
+// ****************** OPERATIONS ********************
+
+let num = 5
+let negnum = -num
+
+// console.log(negnum)
+
+// Some basic arithmetic operations:
+
+// console.log(2 + 2)
+// console.log(2 - 2)
+// console.log(2 * 2)
+// console.log(2 ** 3)
+// console.log(2 / 2)
+// console.log(2 % 3)
+
+let str1 = "Mohammad"
+let str2 = " Hassan"
+
+let str3 = str1 + str2
+
+// console.log(str3)
+
+// console.log("1" + 2)
+// console.log(1 + "2")
+// console.log("2"+ 1 + 2)
+// console.log(2 + 1 + "2")
+
+// console.log(+true)
+// console.log(+"")
+
+let num1, num2, num3
+num1 = num2 = num3 = 2**4
+
+// console.table([num1, num2, num3])
+
+let gameCounter = 100
+// gameCounter++; // Postfix
+// --gameCounter; // Prefix
+
+console.log(gameCounter)
