@@ -16,7 +16,26 @@ const info = {
     lastLoggedIn: ["Monday", "Wednesday"]
 }
 
-console.log(info.user) // common way to access values in objects but does not work everytime like in `"full name" key`
-console.log(info["user"]) // it is a better way to access anything inside the object
-console.log(info["full name"])
-console.log(info[newSymbol])
+// console.log(info.user) // common way to access values in objects but does not work everytime like in `"full name" key`
+// console.log(info["user"]) // it is a better way to access anything inside the object
+// console.log(info["full name"])
+// console.log(info[newSymbol])
+// console.log(info["email"])
+
+info["email"] = "Hassan786@gmail.com"
+// Object.freeze(info)
+info["email"] = "Hassan786@chatgpt.com"
+// console.log(info["email"])
+
+info.addition = function (x, y) {
+    return x + y
+    // console.log(x + y)
+}
+
+info.greeting = function () {
+    console.log(`Hello JS user, ${this["full name"]}`)
+    // return (`Hello JS user, ${this["full name"]}`)
+}
+
+console.log(info.addition(3, 5))
+console.log(info.greeting())
