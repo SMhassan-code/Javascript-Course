@@ -53,8 +53,27 @@ const users = [
 
 // console.log(users[1].id)
 
-console.log(Object.keys(gitUser))
-console.log(Object.values(gitUser))
-console.log(Object.entries(gitUser))
+// console.log(Object.keys(gitUser))
+// console.log(Object.values(gitUser))
+// console.log(Object.entries(gitUser))
 
-console.log(gitUser.hasOwnProperty("email"))
+// console.log(gitUser.hasOwnProperty("email"))
+
+const course = {
+    coursename: "JS with chai aur code",
+    courseInstructor: "Hitesh",
+    price: 1999
+}
+
+console.log(course.coursename)
+
+const {courseInstructor: teacher} = course
+
+console.log(teacher)
+
+// {
+//     name: "Hassan",
+//     id: 123,
+//     email: "hassan@google.com"
+// }
+// this is the syntax of a json which is called an API. json can come in arrays or objects
