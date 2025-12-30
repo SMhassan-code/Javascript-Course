@@ -31,4 +31,36 @@ function logInUserMessage (username) {
 
 const message = logInUserMessage("Ahmed")
 
-console.log(message)
+// console.log(message)
+
+function cartPrice (val1, val2, ...num) {
+    return num
+}
+
+let getCartPrice = cartPrice(54, 200, 765, 1099)
+
+// console.log(getCartPrice)
+
+const newObj = {
+    name: "Hassan",
+    id: 210
+}
+
+function handleObjects (anyObject) {
+    return `My name is ${anyObject.name} and my id is ${anyObject.id}`
+}
+
+// console.log(handleObjects(newObj))
+console.log(handleObjects({
+    name: "Ahmed",
+    id: 234
+}))
+
+const myArr = [300, 500, 659, 784]
+
+function returnLastValue (anyArr) {
+    return anyArr[3]
+}
+
+// console.log(returnLastValue(myArr))
+console.log(returnLastValue([1, 4, 7, 12]))
