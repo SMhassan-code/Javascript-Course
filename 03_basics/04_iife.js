@@ -8,3 +8,5 @@
 ( (id) => {
     console.log(`Hello ${id}`)
 })("231ac");
+
+// important note: we can't hold IIFE in a varible
