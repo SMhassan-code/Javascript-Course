@@ -13,13 +13,38 @@
 </head>
 <body>
     <div class="header">
-        <h1 class="blue">Javascript Tutorial</h1>
+        <h1 id="title" class="blue">Javascript Tutorial <span style="display: none;">test content</span></h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, dolor?</p>
+        <input type="password" name="" id="">
+        <ul>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+        </ul>
     </div>
 
     <script>
-        document.getElementsByClassName("blue")[0].innerHTML = "JS is best"
-        // anything with Elements (plural) returns a collection and needs an index!
+        // let title = document.getElementById("title")
+        // title.className // we can get the class name
+        // title.getAttribute // we can get any attribute
+        // title.id // we can get the id
+        // title.style.color = "purple" // like this we can insert css on any element
+
+        // document.getElementsByClassName('blue')
+        // this gives a html collection
+
+        // document.querySelector(".blue")
+        // document.querySelector("#title")
+        // document.querySelector('input[type = "password"]')
+        // document.querySelector('ul li:nth-child(2)')
+        // we can access elements using querySelector easliy just like css selectors
+
+        // const tempList = document.querySelectorAll("li")
+        // tempList[1].style.color = "purple"
+        // tempList.forEach( (list) => {
+        //     list.style.backgroundColor = "grey"
+        // } )
+        // querySelectorAll provides a nodeList which looks and behaves somewhat like an array but its not an actual array. It has some array methods like forEach. We can convert the node list or html collection into an array using Array.from() method.
     </script>
 </body>
 </html>
