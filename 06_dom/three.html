@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur code tutorial</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    
+</body>
+<script>
+    const div = document.createElement('h1')
+    console.log(div)
+    div.className = "header"
+    div.id = Math.floor(Math.random() * 10 + 1)
+    div.setAttribute("title", "best title")
+    // div.innerText = "My name is Hassan"
+    const addText = document.createTextNode("My name is Hassan")
+    div.appendChild(addText)
+    div.style.backgroundColor = "purple"
+    div.style.padding = "15px"
+    div.style.fontSize = "15px"
+
+    document.body.appendChild(div)
+</script>
+</html>
