@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur code | DOM</title>
+    <style>
+        body {
+            background-color: #212121;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    function addLanguage (langName) {
+        const li = document.createElement('li')
+        li.innerHTML = `${langName}`
+        document.querySelector('.language').appendChild(li)
+    }
+    addLanguage("Python")
+
+    function addOptLanguage (langName) {
+        const li = document.createElement("li")
+        li.appendChild(document.createTextNode(`${langName}`)) // only this line is different from the previous function. This is a optize way to add text.
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptLanguage("Java")
+    addOptLanguage("Cpp")
+
+    // edit
+    const secondLang = document.querySelector('li:nth-child(2)')
+    // secondLang.innerHTML = "Ruby" // first method to change the list
+    const newli = document.createElement("li")
+    newli.appendChild(document.createTextNode("Ruby"))
+    secondLang.replaceWith(newli) // second method to change the list
+
+    const firstLang = document.querySelector('li:first-child')
+    firstLang.outerHTML = "<li>Assembly</li>" // third method to change the list
+    // you can use any method you like. What's important is that the code works, optimization is after that. The more optize method is second method.
+
+    // remove
+    const lastLang = document.querySelector('li:last-child')
+    lastLang.remove()
+</script>
+</html>
