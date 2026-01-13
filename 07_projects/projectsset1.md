@@ -173,3 +173,62 @@ form.addEventListener("submit", handleSubmit)
 
 
 ```
+
+## project 5 solution
+
+```javascript
+
+const insert = document.querySelector('#insert')
+
+window.addEventListener("keydown", (e) => {
+  insert.innerHTML = `
+    <div class: "table">
+      <table>
+        <tr>
+          <th>Key</th>
+          <th>Keycode</th>
+          <th>Code</th>
+        </tr>
+        <tr>
+          <td>${e.key === " " ? " Space": e.key}</td>
+          <td>${e.keyCode}</td>
+          <td>${e.code}</td>
+        </tr>
+    </table>
+    <div/>
+  `
+})
+
+
+```
+
+## project 6 solution
+
+```javascript
+
+let colorChanger = null;
+
+const start = document.querySelector('#start')
+const stop = document.querySelector('#stop')
+
+start.addEventListener("click", function () {
+  // Prevent multiple intervals if clicked multiple times
+  if (colorChanger !== null) {
+    clearInterval(colorChanger)
+  }
+
+  colorChanger = setInterval(function () {
+    let one = Math.floor(Math.random() * 256)
+    let two = Math.floor(Math.random() * 256)
+    let three = Math.floor(Math.random() * 256)
+    document.body.style.backgroundColor = `rgb(${one}, ${two}, ${three})`
+  }, 500)
+})
+
+stop.addEventListener("click", function () {
+  clearInterval(colorChanger)
+  colorChanger = null
+})
+
+
+```
