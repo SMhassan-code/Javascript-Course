@@ -28,6 +28,6 @@ function userData (username, age, isLoggedIn) {
 
 const userOne = new userData("Hassan", 17, true)
 const userTwo = new userData("Ahmed", 18, false)
-console.log(userData.constructor)
+console.log(userOne.constructor)
 
 // The 'new' keyword gives a new instance (copy) of data. This instance is an empty object and values are injected in it. From above, the value of 'this' is injected in contructor function 'new'.
